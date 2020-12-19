@@ -1,0 +1,48 @@
+LicenceKey:
+# Select desired exchange platform to trade,  { BinanceSpot }
+platform: BinanceSpot
+
+# Enter your public and secret api key here
+publicKey:
+secretKey:
+
+# Specify which symbol you want to trade
+symbol: ETHUSDT
+
+# Specify which side the grid should base upon
+gridSide: Buy
+
+# Represents order size for each grid order
+orderSize: 0.25
+
+# Represents number of active orders on grid
+numberOfBufferOrders: 10
+
+# Represents how far the grid levels be set from each other
+gridOrderSpreadPercentage: 0.25
+
+# Represents how far down or up in percentage you want grid to cover
+gridCoveragePercentage: 100
+
+# If enabled, the bot will exit the current position and cancel all active orders
+# and stop when the price goes above or below grid.
+# { true | false }
+priceBreakStop: false
+
+# Represents the price where the bot will close the position and cancel all active orders
+# when the account balance reaches this price.
+gridStopProfitPrice: 9999999
+
+# Represents the price where the bot will close the position and cancel all active orders
+# when the account balance reaches this price.
+gridStopLossPrice: 1
+
+# This setting only applies to spot market option
+# It is used to indicate you have bnb in your account to cover
+# trading fees.
+bnbFeeOn: true
+
+# Helper setting, if you know your exact fee percentage
+# modify this settings, otherwise do not change it!
+feePercentage: 0.1
+
