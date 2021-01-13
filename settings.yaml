@@ -35,7 +35,7 @@ gridStopProfitPrice: 9999999
 
 # Represents the price where the bot will close the position and cancel all active orders
 # when the account balance reaches this price.
-gridStopLossPrice: 1
+gridStopLossPrice: 0.0000001
 
 # This setting only applies to spot market option
 # It is used to indicate you have bnb in your account to cover
